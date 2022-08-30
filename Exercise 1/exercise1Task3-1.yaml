@@ -5,8 +5,8 @@ metadata:
   namespace: trident
 type: kubernetes.io/basic-auth
 stringData:
-  username: change_me
-  password: change_me
+  username: vsadmin
+  password: Netapp1!
 ---
 apiVersion: trident.netapp.io/v1
 kind: TridentBackendConfig
@@ -18,9 +18,9 @@ spec:
   backendName: c1-ontap-nas-backend
   storageDriverName: ontap-nas
   replicationPolicy: MirrorAllSnapshots
-  managementLIF: change_me
-  dataLIF: change_me
-  svm: change_me
+  managementLIF: 192.168.0.30
+  dataLIF: 192.168.0.31
+  svm: svm0
   credentials:
     name: c1-svm0-backend-secret
 ---
@@ -34,8 +34,8 @@ spec:
   backendName: c1-ontap-san-backend
   storageDriverName: ontap-san
   replicationPolicy: MirrorAllSnapshots
-  managementLIF: change_me
-  dataLIF: change_me
-  svm: change_me
+  managementLIF: 192.168.0.30
+  dataLIF: cha192.168.0.32
+  svm: svm0
   credentials:
     name: c1-svm0-backend-secret
