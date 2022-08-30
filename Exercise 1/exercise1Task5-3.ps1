@@ -33,7 +33,7 @@ $credential= New-Object System.Management.Automation.PSCredential ("root", $pass
 
 # Variables and commands to execute on each Kubernetes nodes
 $REGISTRY_NAME="docker-registry"
-$REGISTRY_IP="change_me"  
+$REGISTRY_IP="192.168.0.96"  
 $command = "echo '$REGISTRY_IP $REGISTRY_NAME' >> /etc/hosts"
 $validation = "cat /etc/hosts"
 
