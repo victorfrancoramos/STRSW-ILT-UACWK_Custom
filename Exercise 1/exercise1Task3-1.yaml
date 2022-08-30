@@ -35,7 +35,7 @@ spec:
   storageDriverName: ontap-san
   replicationPolicy: MirrorAllSnapshots
   managementLIF: 192.168.0.30
-  dataLIF: cha192.168.0.32
+  dataLIF: 192.168.0.32
   svm: svm0
   credentials:
     name: c1-svm0-backend-secret
